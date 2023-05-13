@@ -1,0 +1,500 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Pacifico&display=swap');
+
+:root{
+    --cursive:'Pacifico',cursive;
+    --red:#d3f777;
+}
+
+*{
+    font-family: 'poppins',sans-serif;
+    margin: 0;padding: 0;
+    box-sizing: border-box;
+    scroll-behavior: smooth;
+}
+
+/* navbar------------------- */
+.ham-can{
+    display: none;
+}
+
+header{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+   height: 100vh;
+   background-size: cover;
+   background-position: center;
+   background-image: linear-gradient(rgba(252, 252, 252, 0.377),rgba(246, 246, 255, 0.267)),url("../img/bg.jpg");
+}
+
+nav{
+    z-index: 9999;
+    width: 100vw;
+    position: fixed;
+    top: 0;
+    background-color: #ffffff;
+    padding: 1%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.logo{
+    cursor: pointer;
+    width: 100px;
+    overflow: hidden;
+}
+
+.logo img{
+    width: 100%;
+}
+
+nav ul{
+    align-items: center;
+    display: flex;
+    gap: 1pc;
+}
+
+nav ul li{
+    list-style: none;
+}
+
+nav ul li a{
+    padding: 2px 1pc;
+    border-radius: 5pc;
+    background-color: #f0f0f07a;
+    color: #000000;
+    text-decoration: none;
+    font-size: 14px;
+    transition: .3s;
+}
+
+nav ul li a:hover{
+    background-color: #da012d;
+    color: white;
+}
+
+.nav-btn{
+    display: grid;
+    place-items: center;
+    padding: 2px;
+    border-radius: 5pc;
+    background-color: #f0f0f07a;
+    
+}
+
+.nav-btn a{
+    text-decoration: none;
+    color: #000000; 
+}
+
+/* for txtbox */
+.txt-box{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+.txt-box h1{
+    font-family: var(--cursive);
+    font-size:clamp(3rem,10vw,5rem);
+    color: white;
+}
+
+.txt-box p{
+    color: #ffffff;
+    text-align: center;
+    margin: 0 1pc;
+}
+
+.txt-buttons{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 2pc;
+    margin-top: 2pc;
+}
+
+.btn-txt-box{
+    background-color: white;
+    padding:1pc 2pc;
+    border-radius: 50pc;
+    transition: .3s ease-in;
+    cursor: pointer;
+}
+
+.btn-txt-box:hover{
+    transform: translateY(-.2pc);
+    background-color: #da012d;
+}
+
+.btn-txt-box:hover a{
+    transition: .3s ease-in;
+    color: #ffffff;
+}
+
+.btn-txt-box a{
+    text-decoration: none;
+    color: #000000;
+}
+
+.button-1{
+    background-color: #da012d;
+}
+
+.button-1 a{
+    color:#ffffff;
+}
+/* for welcome msg------------ */
+
+.welcome-msg{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 4pc;
+    text-align: center;
+}
+
+.read-btn{
+    margin-top: 2pc;
+    width: max-content;
+}
+
+/* for special-------------- */
+
+.special{
+    padding: 7pc;
+    display: flex;
+    justify-content: center;
+    background-color: #e7e7e7;
+    align-items: center;
+    flex-wrap: wrap;
+    gap: 4pc;
+}
+
+.col{
+    flex-basis: 250px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.col .content{
+    margin-top: 2pc;
+    text-align: center;
+}
+
+.col-img{
+    border-radius: 50pc;
+    width: 250px;
+    overflow: hidden;
+    height: 250px;
+}
+
+.col-img img{
+    width: 100%;
+    height: 100%;
+}
+
+.spc-btn{
+    margin-top: 2pc;
+}
+
+/* for booking-------------- */
+
+.booking{
+   padding: 5pc 1pc;
+    background-position: center;
+    background-size: cover;
+    background-image:linear-gradient(#606c8879,#3f4c6b77),url("../img/booking.jpg");
+}
+
+.booking-cnt{
+    color: white;
+    text-align: center;
+}
+
+.booking-cnt h1{
+    font-family: var(--cursive);
+    font-size: clamp(3rem,10vw,5rem);
+}
+
+.booking-cnt .number{
+    font-family: 'poppins',sans-serif;
+}
+
+.booking-btns{
+    margin-top: 2pc;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 1pc;
+}
+
+.booking-btns .bk-btn{
+    width: max-content;
+}
+
+.booking-btns .bk-btn-1{
+    background-color: white;
+}
+
+.bk-btn-1 a{
+    color: #000000;
+}
+
+/* services */
+.service-title{
+    margin: 3pc 0;
+    text-align: center;
+}
+.service-container{
+    padding: 5pc 4pc;
+    display: grid;
+    grid-template-columns: repeat( auto-fit, minmax(300px, 1fr) );
+    gap: 2pc;
+    row-gap: 4pc;
+    place-items: center;
+}
+
+.service-container .card {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background-color: #e7e7e7;
+    padding: 2pc;
+    cursor: pointer;
+    transition: .3s;
+}
+
+.service-container .card:hover{
+    background-color: #da012d;
+}
+
+.service-container .card:hover .card-img{
+    background-color: #81021c;
+}
+
+.service-container .card:hover .card-content{
+    color: #ffffff;
+}
+
+.service-container .card .card-img{
+    background-color: #da012d;
+    width: 80px;
+    height: 80px;
+    padding: 20px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 50pc;
+    transform: translateY(-4pc);
+    transition: .3s;
+}
+
+.service-container .card-content{
+    text-align: center;
+    margin-top: -2pc;
+    transition: .3s;
+} 
+
+.service-btn{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: -3pc;
+    margin-bottom: 3pc;
+}
+
+.service-btn div{
+    width: fit-content;
+}
+
+/* for testimonials-----------------------*/
+
+.testimonials{
+    padding: 2pc;
+    background-image: url("../img/siora-photography-228Ug-nLxx8-unsplash.jpg");
+    background-size: cover;
+    background-position: center;
+}
+
+.t-title h1{
+    font-size: clamp(1rem,10vw,5rem);
+    color: #ffffff;
+}
+
+.review-container{
+    margin-top: 3pc;
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    gap: 3pc;
+    flex-wrap: wrap;
+}
+
+.review-container .review{
+    color: white;
+    flex-basis: 600px;
+}
+
+/* map----------------------------------- */
+.map{
+    width: 100%;
+}
+
+.map iframe{
+    width: 100%;
+}
+
+/* contact us---------------------------- */
+
+.contact{
+    padding: 4pc;
+    background-image:linear-gradient(#8d2de23f,#4b00e036),url("../img/antonio-grosz-lszypRm8AkY-unsplash.jpg");
+    background-position: center;
+    background-size: cover;
+}
+
+.contact .title{
+    color: white;
+    text-align: center;
+    margin-bottom: 4pc;
+}
+
+.contact form{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.contact input,
+.contact textarea{
+    outline: none;
+    background: transparent;
+    border: none;
+    border-bottom: 2px solid white !important;
+    width: 80vw;
+    color: white;
+}
+
+.contact textarea{
+    resize: none;
+}
+
+.success{
+    color: greenyellow;
+    display: none;
+}
+
+/* footer-------------------------------- */
+
+footer{
+    flex-wrap: wrap;
+    padding: 1pc .5pc;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    gap: 1pc;
+}
+
+.icons-c{
+    display: flex;
+    gap: 1pc;
+}
+
+.icon{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 50px;
+    height: 50px;
+    border-radius: 50pc;
+    background-color: #da012d;
+    cursor: pointer;
+    transition: .3s;
+}
+
+.icon:hover{
+    transform: translateY(-5px);
+    background-color: #81021c;
+}
+
+.f-btn:hover{
+    background-color: #81021c;
+}
+
+
+.right-sect span{
+    color:#da012d;
+}
+/* media queries------------------------- */
+
+@media (max-width:400px) {
+    .service-container{
+        padding: 1pc;
+        grid-template-columns: repeat( auto-fit, minmax(280px, 1fr) );
+    }
+}
+
+@media (max-width:768px){
+    .nav-btn{
+        display: none;
+    }
+    .ham-can{
+        display: block;
+        z-index: 9999;
+    }
+    .cancel{
+        display: none;
+        margin-right: 6px;
+    }     
+
+    nav{
+       padding: 3%;
+    }
+
+    nav ul{
+    width: 200px;
+    height: 100vh;
+    background: #da012d;
+    position: fixed;
+    top: 0;
+    right: -100pc;
+    flex-direction: column;
+    justify-content: center;
+    transition: .3s;
+    }
+    
+    nav ul li{
+        align-self: flex-start;
+    }
+
+    nav ul li a{
+        background: none;
+        color: white;
+        font-size: 28px
+    }
+}
+
+
+/* custom scrollbar-------------- */
+
+::-webkit-scrollbar{
+    width: 10px;
+}
+
+::-webkit-scrollbar-track{
+background: #8080807e;
+}
+
+::-webkit-scrollbar-thumb{
+    background: #da012d;
+    border-radius: 20pc;
+}
